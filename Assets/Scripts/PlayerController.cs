@@ -14,10 +14,19 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y + speed * Time.deltaTime); 
+            transform.Translate(Vector2.up * speed * Time.deltaTime); 
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y - speed * Time.deltaTime); 
-        }    }
+            transform.Translate(Vector2.down * speed * Time.deltaTime); 
+        }
+        if (transform.position.y > 4.27f)
+        {
+            transform.position = new Vector2(transform.position.x, 4.27f);
+        }
+        if (transform.position.y < -4.27f)
+        {
+            transform.position = new Vector2(transform.position.x, -4.27f);
+        }
+    }
 }

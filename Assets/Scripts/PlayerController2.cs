@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerController2 : MonoBehaviour
 {
     public float speed;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,11 +15,19 @@ public class PlayerController2 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y + speed * Time.deltaTime);
+            transform.Translate(Vector2.up * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y - speed * Time.deltaTime);
+            transform.Translate(Vector2.down * speed * Time.deltaTime);
+        }
+        if (transform.position.y > 4.27f)
+        {
+            transform.position = new Vector2(transform.position.x, 4.27f);
+        }
+        if (transform.position.y < -4.27f)
+        {
+            transform.position = new Vector2(transform.position.x, -4.27f);
         }
     }
 }
