@@ -967,7 +967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AI
   ball: {fileID: 11173317}
   speed: 10
-  reactionTime: 0.15
+  reactionTime: 0.1
 --- !u!1 &1060968676
 GameObject:
   m_ObjectHideFlags: 0
