@@ -812,6 +812,7 @@ GameObject:
   - component: {fileID: 791679427}
   - component: {fileID: 791679429}
   - component: {fileID: 791679430}
+  - component: {fileID: 791679431}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player 2
@@ -952,6 +953,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &791679431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791679426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0f38ff4d9e4b3408889840c8c62948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AI
+  ball: {fileID: 11173317}
+  speed: 10
+  reactionTime: 0.15
 --- !u!1 &1060968676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,14 +1543,14 @@ RectTransform:
   m_GameObject: {fileID: 2143700344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 4.6, y: 4.6, z: 4.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2127445892}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: 114.9}
+  m_AnchoredPosition: {x: 70.26, y: 317.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143700346
